@@ -10,7 +10,6 @@ from django.http import HttpResponse, HttpResponseForbidden
 from django.template import loader
 from django.http import JsonResponse
 from django.conf import settings
-#from django.shortcuts import redirect
 
 """
 Index Main page
