@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+ * FILE: mod_tmp
+ * AUTHOR: author_tmp
+ * VERSION: version_tmp
+
+
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Copyright (c) year_tmp, SM Retail, Inc.
+ * All rights reserved.
+-->
+
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>name_tmp Module</name>
+    <author>author_tmp</author>
+    <version>version_tmp</version>
+    <creationDate>datecreated_tmp</creationDate>
+    <description>description_tmp</description>
+    <files>
+        <filename>mod_tmp.xml</filename>
+        <filename module="mod_tmp">mod_tmp.php</filename>
+        <filename>index.php</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+    </config>
+</extension>

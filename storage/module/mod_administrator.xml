@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+ * FILE: mod_administrator
+ * AUTHOR: IT Services
+ * VERSION: 1.0
+
+
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Copyright (c) 2017, SM Retail, Inc.
+ * All rights reserved.
+-->
+
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Administrator Module</name>
+    <author>IT Services</author>
+    <version>1.0</version>
+    <creationDate>July 2017</creationDate>
+    <description>Admin Page</description>
+    <files>
+        <filename>mod_administrator.xml</filename>
+        <filename module="mod_administrator">mod_administrator.php</filename>
+        <filename>index.php</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+    </config>
+</extension>
