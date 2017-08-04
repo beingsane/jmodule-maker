@@ -47,6 +47,7 @@ def gen_manifest(data):
         'mod_tmp': 'mod_' + data['module_name'].lower(),
         'author_tmp': data['author'],
         'description_tmp': data['description'],
+        'layer_tmp': data['layer'],
         'version_tmp': data['version'],
         'name_tmp': data['module_name'].title(),
         'year_tmp': date['year'],
@@ -207,5 +208,6 @@ def generate(request):
         data['module_name'] = module_name.replace(' ', '')
         data['author'] = request.POST['author']
         data['description'] = request.POST['description']
+        data['layer'] = request.POST['layer']
         data['version'] = request.POST['version']
         return start_gen(data)

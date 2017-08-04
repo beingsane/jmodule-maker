@@ -45,9 +45,12 @@ $(document).ready(function(){
         var module_name = $('#inp_name').val();
         var author = $('#inp_author').val();
         var description = $('#inp_description').val()
+        var layer = $('#inp_layer').val();
         var version = $('#inp_version').val();
 
-        if (module_name == '' || author == '' || description == '' || version == '') {
+        if (module_name == '' || author == '' || 
+            description == '' || layer == '' || 
+            version == '') {
             swal(
                 'Oops..',
                 'Please filling out empty fields',
@@ -61,6 +64,7 @@ $(document).ready(function(){
             'module_name': module_name,
             'author': author,
             'description': description,
+            'layer': layer,
             'version': version
         };
 
@@ -91,4 +95,6 @@ $(document).ready(function(){
             return false;
         }
     });
+
+    $('select').material_select();
 });
